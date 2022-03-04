@@ -1,0 +1,187 @@
+.form-inside {
+    flex-direction: column;
+    align-items: center;
+    height: 920px;
+}
+
+.feedback-form {
+    width: 100%;
+}
+
+.form-inside > .title > h1 {
+    font-family: MontserratBlack;
+    font-size: 52px;
+    text-transform: uppercase;
+    margin: 50px 0 0 0;
+    color: #242424;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.form-inside > .title > h2 {
+    font-family: MontserratBlack;
+    font-size: 28px;
+    text-transform: uppercase;
+    margin: 0;
+    text-align: center;
+    color: #242424;
+    letter-spacing: 2px;
+}
+
+.form-left > input:focus {
+    outline: 2px solid #00360e;
+}
+
+.alert {
+    display: none;
+    font-family: MontserratRegular;
+    font-size: 20px;
+    margin-top: 10px;
+    width: 340px;
+    transition: 0.3s;
+    position: fixed;
+    top: 200px;
+    left: 0px;
+    padding: 50px 10px 50px 50px;
+    background-color: #f7f7f7;
+    border: 2px solid #242424;
+    border-left: 0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    animation-name: alert-slide;
+    animation-duration: 1s;
+    box-shadow: 0px 3px 7px 0px #2424244d;
+    z-index: 100;
+}
+
+.symbolsCount {
+    color: #8a8a8a;
+    font-size: 20px;
+    font-family: MontserratRegular;
+}
+
+.name-alert {
+    display: none;
+}
+
+.email-alert {
+    display: none;
+}
+
+.message-alert {
+    display: none;
+}
+
+.alert.anim-end {
+    animation-name: alert-close;
+    animation-duration: 1s;
+}
+
+@keyframes alert-slide {
+    0% {
+        left: -340px;
+        opacity: 0;
+    }
+
+    100% {
+        left: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes alert-close {
+    0% {
+        left: 0;
+        opacity: 1;
+    }
+
+    100% {
+        left: -390px;
+        opacity: 0;
+    }
+}
+
+.form-left > input {
+    border-radius: 10px;
+    background-color: #e5e5e5;
+    box-shadow: 0px 3px 7px 0px #2424244d;
+    width: 340px;
+    height: 60px;
+    outline: 0;
+    border: 0;
+    font-family: MontserratRegular;
+    font-size: 20px;
+    padding-left: 15px;
+    margin-top: 20px;
+}
+
+.form-right > textarea {
+    border-radius: 10px;
+    background-color: #e5e5e5;
+    box-shadow: 0px 3px 7px 0px #2424244d;
+    width: 340px;
+    height: 225px;
+    outline: 0;
+    border: 0;
+    font-family: MontserratRegular;
+    font-size: 20px;
+    resize: none;
+    margin-top: 20px;
+    padding: 5px 5px 5px 15px;
+}
+
+
+.form-right > textarea:focus {
+    outline: 2px solid #00360e;
+}
+
+
+form label {
+    font-family: MontserratRegular;
+    font-size: 24px;
+}
+
+.form-left {
+    display: flex;
+    flex-direction: column;
+    margin-right: 65px;
+}
+
+.form-right {
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    margin-top: 130px;
+    flex-wrap: wrap;
+}
+
+.form-left label:nth-child(4) {
+    margin-top: 60px;
+}
+
+.form-left input:nth-child(6) {
+    background-color: #05a5f3;
+    color: #f7f7f7;
+    width: 235px;
+    height: 60px;
+    font-family: MontserratAlt;
+    font-size: 24px;
+    margin-top: 26px;
+    transition: .3s;
+    border: 0;
+    outline: 0;
+}
+
+.form-left input:nth-child(6):disabled {
+    opacity: 0.5;
+}
+
+.form-left input:nth-child(6):hover {
+    transition: .3s;
+    color: #ebebeb;
+    background-color: #069feb;
+}

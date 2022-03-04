@@ -1,0 +1,113 @@
+.adv-inside > .title > h1 {
+    font-family: MontserratBlack;
+    font-size: 52px;
+    text-transform: uppercase;
+    margin: 50px 0 0 0;
+    color: #242424;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.adv-inside > .title > h2 {
+    font-family: MontserratBlack;
+    font-size: 28px;
+    text-transform: uppercase;
+    margin: 0;
+    text-align: center;
+    color: #242424;
+    letter-spacing: 2px;
+}
+
+.arrow img {
+    width: 55px;
+    height: 55px;
+}
+
+.adv-inside {
+    flex-direction: column;
+    margin: 0 auto;
+    height: 990px;
+    width: 100%;
+}
+
+.slider-top > img {
+    width: 300px;
+    height: 300px;
+    transition: .3s;
+}
+
+.slider {
+    display: flex;
+    flex-direction: column;
+    margin-top: 139px;
+}
+
+.slider-top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.slider-bottom {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.slider-bottom p:nth-child(1) {
+    font-family: MontserratBold;
+    font-size: 36px;
+}
+
+.slider-bottom p:nth-child(2) {
+    font-family: MontserratRegular;
+    font-size: 24px;
+    margin: 0;
+}
+
+.slider-btn{
+    background-color: #c5c5c5;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 78px;
+    transition: .1s;
+}
+
+.slider-btn:hover {
+    transition: .1s;
+    background-color: #8f8f8f;
+}
+
+.slider-navigation .slider-btn:nth-child(3) {
+    margin-right: 0;
+}
+
+.slider-navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.adv-inside a {
+    color: #f7f7f7;
+    text-decoration: none;
+    font-family: MontserratAlt;
+    font-size: 24px;
+    background-color: #05a5f3;
+    border-radius: 10px;
+    padding: 12px 40px;
+    transition: .3s;
+    box-shadow: 0px 3px 7px 0px rgba(36, 36, 36, 0.3);
+    display: flex;
+    align-self: center;
+    margin-top: 60px;
+}
+
+.adv-inside a:hover {
+    transition: .3s;
+    color: #ebebeb;
+    background-color: #069feb;
+}

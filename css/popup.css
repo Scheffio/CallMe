@@ -1,0 +1,134 @@
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0a0a0a66;
+}
+
+.popup-content {
+    background-color: #f7f7f7;
+    margin: 15% auto;
+    padding: 20px;
+    border: 2px solid #05a5f3;
+    width: 20%;
+    position: relative;
+    animation-name: popup-slide;
+    animation-duration: .3s;
+    border-radius: 5px;
+}
+
+.popup-content form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    font-family: MontserratRegular;
+}
+
+.popup-content form button {
+    font-family: MontserratRegular;
+    transition: .3s;
+    border: 2px solid transparent;
+    background-color: #05a5f3;
+    color: #f7f7f7;
+    font-size: 24px;
+    padding: 5px 20px;
+    font-weight: bold;
+}
+
+.popup-content form button:hover {
+    transition: .3s;
+    color: #05a5f3;
+    background-color: #f7f7f7;
+    border: 2px solid #05a5f3;
+}
+
+.popup-content form input {
+    font-family: MontserratRegular;
+    margin-bottom: 40px;
+    border: 2px solid transparent;
+    padding: 10px;
+    background-color: #e5e5e5;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    box-shadow: 0px 3px 7px 0px #2424244d;     
+}
+
+.popup-content form label {
+    margin-bottom: 10px;
+    width: 60%;
+}
+
+.popup-content form input:focus {
+    outline: 0;
+    outline-offset: 0;
+    border: 1px solid #3f3f3f;
+}
+
+.close {
+    color: #131313;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 28px;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.close:hover {
+    transition: .3s;
+    color: #888;
+}
+
+.popup-content.anim-end {
+    animation-name: close-popup;
+    animation-duration: .3s;
+}
+
+#register {
+    text-decoration: none;
+    color: #242424;
+    margin-bottom: 15px;
+}
+
+#register:hover {
+    text-decoration: underline;
+}
+
+
+form p {
+    font-family: MontserratBold;
+    font-size: 24px;
+}
+
+
+/*   АНИМАЦИИ     */
+
+
+@keyframes popup-slide {
+    0% {
+        top: -300px;
+        opacity: 0;
+    }
+
+    100% {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes close-popup {
+    0% {
+        top: 0;
+        opacity: 1;
+    }
+
+    100% {
+        top: -300px;
+        opacity: 0;
+    }
+}

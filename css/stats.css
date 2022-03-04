@@ -1,0 +1,68 @@
+.stats {
+    background-color: #04a7f3;
+    width: 100%;
+    color: #f7f7f7;
+    height: 920px;
+}
+
+.stats-inside {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 12%;
+}
+
+.stats-elem1 p:nth-child(2), .stats-elem2 p:nth-child(2), .stats-elem3 p:nth-child(2)  {
+    font-family: MontserratBlack;
+    font-size: 90px;
+    margin: 0;
+}
+
+.stats-elem1 p:nth-child(3), .stats-elem2 p:nth-child(3), .stats-elem3 p:nth-child(3) {
+    font-family: MontserratRegular;
+    font-size: 36px;
+    margin: 0;
+}
+
+.fa-server, .fa-users, .fa-phone {
+    font-size: 120px;
+    margin-bottom: 60px;
+    transition: 0.3s;
+    border: 2px solid transparent;
+}
+
+.fa-server:hover, .fa-users:hover, .fa-phone:hover {
+    transition: 0.3s;
+    color: #04a7f3;
+    text-shadow: -2px 0 #f7f7f7, 0 2px #f7f7f7, 2px 0 #f7f7f7, 0 -2px #f7f7f7;
+}
+
+.stats-elem1, .stats-elem2, .stats-elem3 {
+    text-align: center;
+    width: 400px;
+}
+
+.stats-btn > a {
+    color: #f7f7f7;
+    text-decoration: none;
+    font-family: MontserratAlt;
+    background-color: #05a5f3;
+    border: 3px solid #f7f7f7;
+    border-radius: 10px;
+    padding: 15px 15px;
+    transition: .3s;
+    font-size: 24px;
+    box-shadow: 0px 3px 7px 0px rgba(36, 36, 36, 0.3);
+    margin-top: 100px;
+}
+
+.stats-btn > a:hover {
+    transition: .3s;
+    color: #ebebeb;
+    background-color: #069feb;
+}
+
+.stats-btn {
+    display: flex;
+    justify-content: center;
+}

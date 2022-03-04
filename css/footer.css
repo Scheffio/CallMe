@@ -1,0 +1,137 @@
+.footer-inside {
+    height: 327px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    width: 100%;
+    background-color: #05a5f3;
+    position: relative;
+}
+
+.footer > .scroll-btn > a {
+    transform: rotate(180deg);
+}
+
+.footer > .scroll-btn {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    position: absolute;
+    top: 75px;
+    right: 10px;
+    width: 57px;
+}
+
+.title-top h1 {
+    font-family: MontserratAlt;
+    text-transform: uppercase;
+    font-size: 72px;
+    color: #f7f7f7;
+    margin: 0px;
+}
+
+.title-top h2 {
+    font-family: MontserratBlack;
+    font-size: 36px;
+    color: #f7f7f7;
+    margin: 0;
+}
+
+.copyright p {
+    font-family: MontserratRegular;
+    font-size: 20px;
+    color: #f7f7f7;
+    margin-top: 123px;
+    margin-bottom: 0;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.contacts {
+    color: #f7f7f7;
+    font-family: MontserratRegular;
+    font-size: 20px;
+    width: 350px;
+    margin-left: 212px;
+}
+
+.contacts p {
+    display: inline-block;
+    position: relative;
+    margin: 15px 0px 15px 0px;
+}
+
+.contacts p::after {
+    content: "";
+    position: absolute;
+    top: 22px;
+    left: 0;
+    display: block;
+    background-color: #f7f7f7;
+    width: 100%;
+    height: 3px;
+    transform: scaleX(0);
+    transition: .3s;
+}
+
+.contacts p:nth-child(3)::before {
+    content: "";
+    position: absolute;
+    top: 46px;
+    left: 0;
+    display: block;
+    background-color: #f7f7f7;
+    width: 30%;
+    height: 3px;
+    transform: scaleX(0);
+    transition: .3s;
+}
+
+.contacts p:nth-child(3):hover::before {
+    transition: .3s;
+    transform: scaleX(1);
+}
+
+.contacts p:hover::after {
+    transform: scaleX(1);
+    transition: .3s;
+}
+
+.contacts p:nth-child(1) {
+    margin-top: 0;
+}
+
+.socials i {
+    color: #f7f7f7;
+    font-size: 50px;
+    transition: .3s;
+}
+
+.fa-instagram:hover {
+    transition: .3s;
+    color: #adadad;
+}
+
+.fa-facebook-square:hover {
+    transition: .3s;
+    color: #adadad;
+}
+
+.fa-twitter:hover {
+    transition: .3s;
+    color: #adadad;
+}
+
+.socials {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 165px;
+    margin-left: 83px;
+}

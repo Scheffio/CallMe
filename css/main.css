@@ -1,0 +1,103 @@
+.inside-right img {
+    width: 900px;
+    height: 500px;
+}
+
+.content {
+    width: 100%;
+    height: 1200px;
+    background: #05a5f3;
+    background: linear-gradient(180deg, #05a5f3 0%, #00f2fe 100%);
+}
+
+.content-inside > .inside-left > h1 {
+    font-family: MontserratBold;
+    font-size: 54px;
+    text-transform: uppercase;
+    color: #f7f7f7;
+    margin: 0;
+    letter-spacing: 4px ;
+}
+
+.inside-left > p{
+    color: #f7f7f7;
+    font-family: MontserratRegular;
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+
+.inside-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 473px;
+    height: 169px;
+    color: #f7f7f7;
+    background: #0391d6;
+    background: linear-gradient(180deg, #0391d6 0%, #00b7d1 100%);
+    border-radius: 10px;
+}
+
+.timer-elem1, .timer-elem2, .timer-elem3 {
+    text-align: center;
+}
+
+.timer-elem1 p:nth-child(1), .timer-elem2 p:nth-child(1), .timer-elem3 p:nth-child(1) {
+    font-family: MontserratBlack;
+    font-size: 48px;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.timer-elem1 p:nth-child(2), .timer-elem2 p:nth-child(2), .timer-elem3 p:nth-child(2) {
+    font-family: MontserratRegular;
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.regBtn {
+    color: #f7f7f7;
+    text-decoration: none;
+    font-family: MontserratAlt;
+    background-color: #05a5f3;
+    border-radius: 10px;
+    padding: 15px 15px;
+    transition: .3s;
+    font-size: 24px;
+    box-shadow: 0px 3px 7px 0px #2424244d;
+    margin-top: 20px;
+}
+
+.reg-now {
+    font-family: MontserratRegular;
+    font-size: 24px;
+    color: #f7f7f7;
+}
+
+.regBtn:hover {
+    transition: .3s;
+    color: #ebebeb;
+    background-color: #069feb;
+}
+
+.content-inside {
+    margin-top: 82px;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.scroll-btn {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+    align-items: flex-end;
+    height: 200px;
+}
